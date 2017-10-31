@@ -14,6 +14,9 @@
 		B51C08AB1FA2C8350024520C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B51C08AA1FA2C8350024520C /* Assets.xcassets */; };
 		B51C08AE1FA2C8350024520C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B51C08AC1FA2C8350024520C /* LaunchScreen.storyboard */; };
 		B51C08B91FA2C8CD0024520C /* UIView+LJCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = B51C08B81FA2C8CD0024520C /* UIView+LJCategory.m */; };
+		B55648211FA81D840098BB9C /* NSString+LJCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = B55648201FA81D840098BB9C /* NSString+LJCategory.m */; };
+		B55648261FA825BB0098BB9C /* NSDictionary+LJCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = B55648251FA825BB0098BB9C /* NSDictionary+LJCategory.m */; };
+		B55648291FA82BC10098BB9C /* NSObject+LJCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = B55648281FA82BC10098BB9C /* NSObject+LJCategory.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +32,14 @@
 		B51C08AF1FA2C8350024520C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B51C08B71FA2C8CD0024520C /* UIView+LJCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+LJCategory.h"; sourceTree = "<group>"; };
 		B51C08B81FA2C8CD0024520C /* UIView+LJCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+LJCategory.m"; sourceTree = "<group>"; };
+		B556481F1FA81D840098BB9C /* NSString+LJCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+LJCategory.h"; sourceTree = "<group>"; };
+		B55648201FA81D840098BB9C /* NSString+LJCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+LJCategory.m"; sourceTree = "<group>"; };
+		B55648221FA824900098BB9C /* LJFrameworkCommon.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LJFrameworkCommon.h; sourceTree = "<group>"; };
+		B55648231FA824A20098BB9C /* LJFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LJFramework.h; sourceTree = "<group>"; };
+		B55648241FA825BB0098BB9C /* NSDictionary+LJCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+LJCategory.h"; sourceTree = "<group>"; };
+		B55648251FA825BB0098BB9C /* NSDictionary+LJCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+LJCategory.m"; sourceTree = "<group>"; };
+		B55648271FA82BC10098BB9C /* NSObject+LJCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+LJCategory.h"; sourceTree = "<group>"; };
+		B55648281FA82BC10098BB9C /* NSObject+LJCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+LJCategory.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +98,8 @@
 			isa = PBXGroup;
 			children = (
 				B51C08B61FA2C8A70024520C /* Category */,
+				B55648221FA824900098BB9C /* LJFrameworkCommon.h */,
+				B55648231FA824A20098BB9C /* LJFramework.h */,
 			);
 			path = LJFramework;
 			sourceTree = "<group>";
@@ -96,6 +109,12 @@
 			children = (
 				B51C08B71FA2C8CD0024520C /* UIView+LJCategory.h */,
 				B51C08B81FA2C8CD0024520C /* UIView+LJCategory.m */,
+				B556481F1FA81D840098BB9C /* NSString+LJCategory.h */,
+				B55648201FA81D840098BB9C /* NSString+LJCategory.m */,
+				B55648241FA825BB0098BB9C /* NSDictionary+LJCategory.h */,
+				B55648251FA825BB0098BB9C /* NSDictionary+LJCategory.m */,
+				B55648271FA82BC10098BB9C /* NSObject+LJCategory.h */,
+				B55648281FA82BC10098BB9C /* NSObject+LJCategory.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -176,6 +195,9 @@
 				B51C08A31FA2C8350024520C /* AppDelegate.m in Sources */,
 				B51C08B91FA2C8CD0024520C /* UIView+LJCategory.m in Sources */,
 				B51C08A01FA2C8350024520C /* main.m in Sources */,
+				B55648261FA825BB0098BB9C /* NSDictionary+LJCategory.m in Sources */,
+				B55648291FA82BC10098BB9C /* NSObject+LJCategory.m in Sources */,
+				B55648211FA81D840098BB9C /* NSString+LJCategory.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -332,6 +354,7 @@
 				B51C08B41FA2C8350024520C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

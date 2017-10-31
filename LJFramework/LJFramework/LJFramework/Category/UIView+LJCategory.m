@@ -9,78 +9,123 @@
 #import "UIView+LJCategory.h"
 
 @implementation UIView (LJCategory)
-
-- (void)setLj_x:(CGFloat)lj_x {
+#pragma mark - ------------------ Frame ---------------------
+- (void)setX:(CGFloat)x {
     CGRect frame = self.frame;
-    frame.origin.x = lj_x;
+    frame.origin.x = x;
     self.frame = frame;
 }
-
-- (CGFloat)lj_x {
+- (CGFloat)x {
     return self.frame.origin.x;
 }
 
-- (void)setLj_y:(CGFloat)lj_y {
+- (void)setY:(CGFloat)y {
     CGRect frame = self.frame;
-    frame.origin.y = lj_y;
+    frame.origin.y = y;
     self.frame = frame;
 }
-
-- (CGFloat)lj_y {
+- (CGFloat)y {
     return self.frame.origin.y;
 }
 
-- (void)setLj_width:(CGFloat)lj_width {
+- (void)setWidth:(CGFloat)width {
     CGRect frame = self.frame;
-    frame.size.width = lj_width;
+    frame.size.width = width;
     self.frame = frame;
 }
-
-- (CGFloat)lj_width {
+- (CGFloat)width {
     return self.frame.size.width;
 }
-- (void)setLj_height:(CGFloat)lj_height {
+- (void)setHeight:(CGFloat)height {
     CGRect frame = self.frame;
-    frame.size.height = lj_height;
+    frame.size.height = height;
     self.frame = frame;
 }
-
-- (CGFloat)lj_height {
+- (CGFloat)height {
     return self.frame.size.height;
 }
-- (void)setLj_centerX:(CGFloat)lj_centerX {
+
+- (void)setCenterX:(CGFloat)centerX {
     CGPoint point = self.center;
-    point.x = lj_centerX;
+    point.x = centerX;
     self.center = point;
 }
-
-- (CGFloat)lj_centerX {
+- (CGFloat)centerX {
     return self.center.x;
 }
 
-- (void)setLj_centerY:(CGFloat)lj_centerY {
+- (void)setCenterY:(CGFloat)centerY {
     CGPoint point = self.center;
-    point.y = lj_centerY;
+    point.y = centerY;
     self.center = point;
 }
-
-- (CGFloat)lj_centerY {
+- (CGFloat)centerY {
     return self.center.y;
 }
-- (void)setLj_size:(CGSize)lj_size {
+
+- (void)setSize:(CGSize)size {
     CGRect frame = self.frame;
-    frame.size = lj_size;
+    frame.size = size;
     self.frame = frame;
 }
-
-- (CGSize)lj_size {
+- (CGSize)size {
     return self.frame.size;
 }
-- (CGFloat)lj_maxX {
+
+- (CGFloat)maxX {
     return CGRectGetMaxX(self.frame);
 }
 
-- (CGFloat)lj_maxY {
+- (CGFloat)maxY {
     return CGRectGetMaxY(self.frame);
+}
+
+#pragma mark - ------------------ Border ---------------------
+- (void)setBorderWidth:(CGFloat)borderWidth {
+    self.layer.borderWidth = borderWidth;
+}
+- (CGFloat)borderWidth {
+    return self.layer.borderWidth;
+}
+
+- (void)setBorderColor:(UIColor *)borderColor {
+    self.layer.borderColor = borderColor.CGColor;
+}
+- (UIColor *)borderColor {
+    return [UIColor colorWithCGColor:self.layer.borderColor];
+}
+
+- (void)setCornerRadius:(CGFloat)cornerRadius {
+    self.layer.cornerRadius = cornerRadius;
+    self.layer.masksToBounds = !!cornerRadius;
+}
+- (CGFloat)cornerRadius {
+    return self.layer.cornerRadius;
+}
+
+- (void)setBorderWithBorderWidth:(CGFloat)borderWidth cornerRadius:(CGFloat)cornerRadius borderColor:(UIColor *)borderColor {
+    self.borderWidth = borderWidth;
+    self.cornerRadius = cornerRadius;
+    self.borderColor = borderColor;
+}
+- (void)setCircle {
+    self.cornerRadius = MIN(self.width, self.height) * 0.5f;
+}
+- (void)cleaerBorder {
+    self.borderColor = [UIColor clearColor];
+    self.borderWidth = 0.0f;
+    self.cornerRadius = 0.0f;
+}
+
+#pragma mark - ------------------ ParentController ---------------------
+- (UIViewController *)parentController {
+    UIResponder *responder = [self nextResponder];
+    while (responder) {
+        if ([responder isKindOfClass:[UIViewController class]]) {
+            return (UIViewController *)responder;
+        }
+        responder = [responder nextResponder];
+    }
+    return nil;
 }
 @end

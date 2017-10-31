@@ -9,13 +9,39 @@
 #import <UIKit/UIKit.h>
 
 @interface UIView (LJCategory)
-@property (nonatomic, assign) CGFloat lj_x;
-@property (nonatomic, assign) CGFloat lj_y;
-@property (nonatomic, assign) CGFloat lj_width;
-@property (nonatomic, assign) CGFloat lj_height;
-@property (nonatomic, assign) CGSize lj_size;
-@property (nonatomic, assign) CGFloat lj_centerX;
-@property (nonatomic, assign) CGFloat lj_centerY;
-@property (readonly, nonatomic) CGFloat lj_maxX;   //右边界距离屏幕左边框
-@property (readonly, nonatomic) CGFloat lj_maxY;   //下边界距离屏幕上边框
+
+#pragma mark - ------------------ Frame ---------------------
+@property (nonatomic, assign) CGFloat x;
+@property (nonatomic, assign) CGFloat y;
+@property (nonatomic, assign) CGFloat width;
+@property (nonatomic, assign) CGFloat height;
+@property (nonatomic, assign) CGSize size;
+@property (nonatomic, assign) CGFloat centerX;
+@property (nonatomic, assign) CGFloat centerY;
+@property (readonly, nonatomic) CGFloat maxX;
+@property (readonly, nonatomic) CGFloat maxY;
+
+#pragma mark - ------------------ Border ---------------------
+@property (nonatomic, assign) CGFloat borderWidth;
+@property (nonatomic, assign) CGFloat cornerRadius;
+@property (nonatomic, strong) UIColor *borderColor;
+/**
+ *  设置边框(边框宽度/圆角半径/边框颜色)
+ */
+- (void)setBorderWithBorderWidth:(CGFloat)borderWidth cornerRadius:(CGFloat)cornerRadius borderColor:(UIColor *)borderColor;
+/**
+ *  设置为圆形(非正方形时取长宽较小值的一半)
+ */
+- (void)setCircle;
+/**
+ *  清除边框
+ */
+- (void)cleaerBorder;
+
+#pragma mark - ------------------ ParentController ---------------------
+/**
+ *  view所在控制器
+ */
+- (UIViewController *)parentController;
+
 @end
