@@ -13,10 +13,11 @@
 		B51C08A91FA2C8350024520C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B51C08A71FA2C8350024520C /* Main.storyboard */; };
 		B51C08AB1FA2C8350024520C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B51C08AA1FA2C8350024520C /* Assets.xcassets */; };
 		B51C08AE1FA2C8350024520C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B51C08AC1FA2C8350024520C /* LaunchScreen.storyboard */; };
-		B51C08B91FA2C8CD0024520C /* UIView+LJCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = B51C08B81FA2C8CD0024520C /* UIView+LJCategory.m */; };
-		B55648211FA81D840098BB9C /* NSString+LJCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = B55648201FA81D840098BB9C /* NSString+LJCategory.m */; };
-		B55648261FA825BB0098BB9C /* NSDictionary+LJCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = B55648251FA825BB0098BB9C /* NSDictionary+LJCategory.m */; };
-		B55648291FA82BC10098BB9C /* NSObject+LJCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = B55648281FA82BC10098BB9C /* NSObject+LJCategory.m */; };
+		B55648371FA86E600098BB9C /* NSDictionary+LJCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = B556482D1FA86E600098BB9C /* NSDictionary+LJCategory.m */; };
+		B55648381FA86E600098BB9C /* NSObject+LJCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = B556482F1FA86E600098BB9C /* NSObject+LJCategory.m */; };
+		B55648391FA86E600098BB9C /* NSString+LJCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = B55648311FA86E600098BB9C /* NSString+LJCategory.m */; };
+		B556483A1FA86E600098BB9C /* UIView+LJCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = B55648331FA86E600098BB9C /* UIView+LJCategory.m */; };
+		B556483B1FA86E600098BB9C /* LJFramework.podspec in Resources */ = {isa = PBXBuildFile; fileRef = B55648351FA86E600098BB9C /* LJFramework.podspec */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,16 +31,17 @@
 		B51C08AA1FA2C8350024520C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B51C08AD1FA2C8350024520C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B51C08AF1FA2C8350024520C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B51C08B71FA2C8CD0024520C /* UIView+LJCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+LJCategory.h"; sourceTree = "<group>"; };
-		B51C08B81FA2C8CD0024520C /* UIView+LJCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+LJCategory.m"; sourceTree = "<group>"; };
-		B556481F1FA81D840098BB9C /* NSString+LJCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+LJCategory.h"; sourceTree = "<group>"; };
-		B55648201FA81D840098BB9C /* NSString+LJCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+LJCategory.m"; sourceTree = "<group>"; };
-		B55648221FA824900098BB9C /* LJFrameworkCommon.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LJFrameworkCommon.h; sourceTree = "<group>"; };
-		B55648231FA824A20098BB9C /* LJFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LJFramework.h; sourceTree = "<group>"; };
-		B55648241FA825BB0098BB9C /* NSDictionary+LJCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+LJCategory.h"; sourceTree = "<group>"; };
-		B55648251FA825BB0098BB9C /* NSDictionary+LJCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+LJCategory.m"; sourceTree = "<group>"; };
-		B55648271FA82BC10098BB9C /* NSObject+LJCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+LJCategory.h"; sourceTree = "<group>"; };
-		B55648281FA82BC10098BB9C /* NSObject+LJCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+LJCategory.m"; sourceTree = "<group>"; };
+		B556482C1FA86E600098BB9C /* NSDictionary+LJCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+LJCategory.h"; sourceTree = "<group>"; };
+		B556482D1FA86E600098BB9C /* NSDictionary+LJCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+LJCategory.m"; sourceTree = "<group>"; };
+		B556482E1FA86E600098BB9C /* NSObject+LJCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+LJCategory.h"; sourceTree = "<group>"; };
+		B556482F1FA86E600098BB9C /* NSObject+LJCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+LJCategory.m"; sourceTree = "<group>"; };
+		B55648301FA86E600098BB9C /* NSString+LJCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+LJCategory.h"; sourceTree = "<group>"; };
+		B55648311FA86E600098BB9C /* NSString+LJCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+LJCategory.m"; sourceTree = "<group>"; };
+		B55648321FA86E600098BB9C /* UIView+LJCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+LJCategory.h"; sourceTree = "<group>"; };
+		B55648331FA86E600098BB9C /* UIView+LJCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+LJCategory.m"; sourceTree = "<group>"; };
+		B55648341FA86E600098BB9C /* LJFramework.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJFramework.h; sourceTree = "<group>"; };
+		B55648351FA86E600098BB9C /* LJFramework.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LJFramework.podspec; sourceTree = "<group>"; };
+		B55648361FA86E600098BB9C /* LJFrameworkCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJFrameworkCommon.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,10 +79,10 @@
 				B51C08A41FA2C8350024520C /* ViewController.h */,
 				B51C08A51FA2C8350024520C /* ViewController.m */,
 				B51C08A71FA2C8350024520C /* Main.storyboard */,
-				B51C08B51FA2C88A0024520C /* LJFramework */,
 				B51C08AA1FA2C8350024520C /* Assets.xcassets */,
 				B51C08AC1FA2C8350024520C /* LaunchScreen.storyboard */,
 				B51C08AF1FA2C8350024520C /* Info.plist */,
+				B556482A1FA86E600098BB9C /* LJFramework */,
 				B51C089E1FA2C8350024520C /* Supporting Files */,
 			);
 			path = LJFramework;
@@ -94,27 +96,28 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		B51C08B51FA2C88A0024520C /* LJFramework */ = {
+		B556482A1FA86E600098BB9C /* LJFramework */ = {
 			isa = PBXGroup;
 			children = (
-				B51C08B61FA2C8A70024520C /* Category */,
-				B55648221FA824900098BB9C /* LJFrameworkCommon.h */,
-				B55648231FA824A20098BB9C /* LJFramework.h */,
+				B556482B1FA86E600098BB9C /* Category */,
+				B55648341FA86E600098BB9C /* LJFramework.h */,
+				B55648351FA86E600098BB9C /* LJFramework.podspec */,
+				B55648361FA86E600098BB9C /* LJFrameworkCommon.h */,
 			);
 			path = LJFramework;
 			sourceTree = "<group>";
 		};
-		B51C08B61FA2C8A70024520C /* Category */ = {
+		B556482B1FA86E600098BB9C /* Category */ = {
 			isa = PBXGroup;
 			children = (
-				B51C08B71FA2C8CD0024520C /* UIView+LJCategory.h */,
-				B51C08B81FA2C8CD0024520C /* UIView+LJCategory.m */,
-				B556481F1FA81D840098BB9C /* NSString+LJCategory.h */,
-				B55648201FA81D840098BB9C /* NSString+LJCategory.m */,
-				B55648241FA825BB0098BB9C /* NSDictionary+LJCategory.h */,
-				B55648251FA825BB0098BB9C /* NSDictionary+LJCategory.m */,
-				B55648271FA82BC10098BB9C /* NSObject+LJCategory.h */,
-				B55648281FA82BC10098BB9C /* NSObject+LJCategory.m */,
+				B556482C1FA86E600098BB9C /* NSDictionary+LJCategory.h */,
+				B556482D1FA86E600098BB9C /* NSDictionary+LJCategory.m */,
+				B556482E1FA86E600098BB9C /* NSObject+LJCategory.h */,
+				B556482F1FA86E600098BB9C /* NSObject+LJCategory.m */,
+				B55648301FA86E600098BB9C /* NSString+LJCategory.h */,
+				B55648311FA86E600098BB9C /* NSString+LJCategory.m */,
+				B55648321FA86E600098BB9C /* UIView+LJCategory.h */,
+				B55648331FA86E600098BB9C /* UIView+LJCategory.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -181,6 +184,7 @@
 				B51C08AE1FA2C8350024520C /* LaunchScreen.storyboard in Resources */,
 				B51C08AB1FA2C8350024520C /* Assets.xcassets in Resources */,
 				B51C08A91FA2C8350024520C /* Main.storyboard in Resources */,
+				B556483B1FA86E600098BB9C /* LJFramework.podspec in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -193,11 +197,11 @@
 			files = (
 				B51C08A61FA2C8350024520C /* ViewController.m in Sources */,
 				B51C08A31FA2C8350024520C /* AppDelegate.m in Sources */,
-				B51C08B91FA2C8CD0024520C /* UIView+LJCategory.m in Sources */,
+				B55648371FA86E600098BB9C /* NSDictionary+LJCategory.m in Sources */,
+				B55648391FA86E600098BB9C /* NSString+LJCategory.m in Sources */,
+				B55648381FA86E600098BB9C /* NSObject+LJCategory.m in Sources */,
+				B556483A1FA86E600098BB9C /* UIView+LJCategory.m in Sources */,
 				B51C08A01FA2C8350024520C /* main.m in Sources */,
-				B55648261FA825BB0098BB9C /* NSDictionary+LJCategory.m in Sources */,
-				B55648291FA82BC10098BB9C /* NSObject+LJCategory.m in Sources */,
-				B55648211FA81D840098BB9C /* NSString+LJCategory.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
